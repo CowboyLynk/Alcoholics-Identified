@@ -12,9 +12,13 @@
 		8572233B222AD9B100AFB9A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85722339222AD9B100AFB9A0 /* Main.storyboard */; };
 		8572233D222AD9B200AFB9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8572233C222AD9B200AFB9A0 /* Assets.xcassets */; };
 		85722340222AD9B200AFB9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8572233E222AD9B200AFB9A0 /* LaunchScreen.storyboard */; };
+		85F37BA2222ADDB9002D4DBA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85F37BA1222ADDB9002D4DBA /* GoogleService-Info.plist */; };
+		B8BA8877A52552CDD44E1700 /* Pods_Alcoholics_Identified.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB0E9E86A897082D146DD0D /* Pods_Alcoholics_Identified.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DB0E9E86A897082D146DD0D /* Pods_Alcoholics_Identified.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alcoholics_Identified.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C43FC591190E4665EC42CF /* Pods-Alcoholics Identified.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alcoholics Identified.release.xcconfig"; path = "Target Support Files/Pods-Alcoholics Identified/Pods-Alcoholics Identified.release.xcconfig"; sourceTree = "<group>"; };
 		85722332222AD9B000AFB9A0 /* Alcoholics Identified.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alcoholics Identified.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85722335222AD9B100AFB9A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85722337222AD9B100AFB9A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		8572233C222AD9B200AFB9A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8572233F222AD9B200AFB9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85722341222AD9B200AFB9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85F37BA1222ADDB9002D4DBA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E1E9484D6F6CB6889AB4A43E /* Pods-Alcoholics Identified.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alcoholics Identified.debug.xcconfig"; path = "Target Support Files/Pods-Alcoholics Identified/Pods-Alcoholics Identified.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8BA8877A52552CDD44E1700 /* Pods_Alcoholics_Identified.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04F02A9819804D4CF169DA95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0E9E86A897082D146DD0D /* Pods_Alcoholics_Identified.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		85722329222AD9B000AFB9A0 = {
 			isa = PBXGroup;
 			children = (
 				85722334222AD9B000AFB9A0 /* Alcoholics Identified */,
 				85722333222AD9B000AFB9A0 /* Products */,
+				B55388E960C81AB38A8AB8A2 /* Pods */,
+				04F02A9819804D4CF169DA95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				8572233C222AD9B200AFB9A0 /* Assets.xcassets */,
 				8572233E222AD9B200AFB9A0 /* LaunchScreen.storyboard */,
 				85722341222AD9B200AFB9A0 /* Info.plist */,
+				85F37BA1222ADDB9002D4DBA /* GoogleService-Info.plist */,
 			);
 			path = "Alcoholics Identified";
+			sourceTree = "<group>";
+		};
+		B55388E960C81AB38A8AB8A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1E9484D6F6CB6889AB4A43E /* Pods-Alcoholics Identified.debug.xcconfig */,
+				68C43FC591190E4665EC42CF /* Pods-Alcoholics Identified.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85722344222AD9B200AFB9A0 /* Build configuration list for PBXNativeTarget "Alcoholics Identified" */;
 			buildPhases = (
+				F9A575881C6ACB197E2B9149 /* [CP] Check Pods Manifest.lock */,
 				8572232E222AD9B000AFB9A0 /* Sources */,
 				8572232F222AD9B000AFB9A0 /* Frameworks */,
 				85722330222AD9B000AFB9A0 /* Resources */,
+				78CA25939B1317AD9092B101 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				85722340222AD9B200AFB9A0 /* LaunchScreen.storyboard in Resources */,
+				85F37BA2222ADDB9002D4DBA /* GoogleService-Info.plist in Resources */,
 				8572233D222AD9B200AFB9A0 /* Assets.xcassets in Resources */,
 				8572233B222AD9B100AFB9A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78CA25939B1317AD9092B101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Alcoholics Identified/Pods-Alcoholics Identified-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Alcoholics Identified/Pods-Alcoholics Identified-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A575881C6ACB197E2B9149 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Alcoholics Identified-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8572232E222AD9B000AFB9A0 /* Sources */ = {
@@ -280,6 +359,7 @@
 		};
 		85722345222AD9B200AFB9A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1E9484D6F6CB6889AB4A43E /* Pods-Alcoholics Identified.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,7 +369,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lss.Alcoholics-Identified";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lss.alcoholicsidentified;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,6 +378,7 @@
 		};
 		85722346222AD9B200AFB9A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68C43FC591190E4665EC42CF /* Pods-Alcoholics Identified.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,7 +388,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lss.Alcoholics-Identified";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lss.alcoholicsidentified;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
